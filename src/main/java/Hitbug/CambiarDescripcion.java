@@ -11,7 +11,7 @@ public class CambiarDescripcion extends Hit{
         this.descripcionOriginal=contenido.getDescripcion();
     }
     public void ejecutar(){
-        contenido.modificarTitulo(titulo);
+        contenido.modificarDescripcion(titulo);
         agregarAHistorial();
     }
     public void deshacer(){

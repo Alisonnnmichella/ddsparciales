@@ -21,4 +21,5 @@ public class CambiarTituloContenido extends Hit{
     public Bag getContenedor(){
         return contenido.getContenedor();
     }
+
 }

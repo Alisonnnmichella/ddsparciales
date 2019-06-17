@@ -8,7 +8,6 @@ public class Bag {
     private LinkedList<Bag> bagsReferenciados;
     private Set<Contenido> contenidos;
     private Set <Hit> hits;
-    private Set<HitRequest> hitRequests;
     private Usuario duenio;
     private Set<Usuario> colaboradores;
     public Bag(){

@@ -4,22 +4,41 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Usuario {
-    Set<Bag> bags;
+    Set<Bag> bagsPropios;
+    private Set<HitRequest> hitRequests;
 
     public Usuario() {
-        bags=new HashSet<Bag>();
+        bagsPropios=new HashSet<Bag>();
     }
     public void crearBag(){
-        bags.add(new Bag());
+        bagsPropios.add(new Bag());
     }
+
+    public void verificarPermisosDuenio(Bag bag){
+        if(!bagsPropios.stream().anyMatch(b->b==bag))
+            throw new UsuarioException("No tiene los permisos necesarios!");
+    }
+
     public void añadirColaborador(Bag bag,Usuario usuario){
+        verificarPermisosDuenio(bag);
         bag.agregarColaborador(usuario);
     }
+
     public void removerColaborador(Bag bag,Usuario usuario){
+        verificarPermisosDuenio(bag);
         bag.quitarColaborador(usuario);
     }
+
     public void ejecutarHit(Hit hit){
         hit.ejecutar();
     }
+
+    public void agregarHitRequest(HitRequest hitRequest){
+        hitRequests.add(hitRequest);
+    }
+    public void aprobarHitRequest(HitRequest hitRequest){
+        hitRequest.aprobar();
+    }
+
 }
 
