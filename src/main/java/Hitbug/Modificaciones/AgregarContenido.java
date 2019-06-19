@@ -1,18 +1,18 @@
 package Hitbug;
 
-public class QuitarContenido extends Hit{
+public class AgregarContenido extends Modificacion {
     Bag bag;
     Contenido contenido;
-    public QuitarContenido(Bag bag,Contenido contenido){
+    public AgregarContenido(Bag bag,Contenido contenido){
         this.bag= bag;
         this.contenido=contenido;
     }
     public void ejecutar() {
-        bag.quitarContenido(contenido);
+        bag.agregarContenido(contenido);
         agregarAHistorial();
     }
     public void deshacer(){
-        AgregarContenido deshacer=new AgregarContenido(bag,contenido);
+        QuitarContenido deshacer=new QuitarContenido(bag,contenido);
         deshacer.ejecutar();
     }
     public Bag getContenedor(){

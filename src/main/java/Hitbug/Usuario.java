@@ -10,6 +10,7 @@ public class Usuario {
     public Usuario() {
         bagsPropios=new HashSet<Bag>();
     }
+
     public void crearBag(){
         bagsPropios.add(new Bag());
     }
@@ -29,7 +30,7 @@ public class Usuario {
         bag.quitarColaborador(usuario);
     }
 
-    public void ejecutarHit(Hit hit){
+    public void ejecutarHit(Modificacion hit){
         hit.ejecutar();
     }
 
@@ -39,6 +40,11 @@ public class Usuario {
     public void aprobarHitRequest(HitRequest hitRequest){
         hitRequest.aprobar();
     }
+    public void rechazarHitRequest(HitRequest hitRequest){
+        hitRequest.rechazar();
+    }
+    public void verBagEnHit(Bag bag, Modificacion hit){
 
+    }
 }
 

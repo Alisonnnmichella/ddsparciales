@@ -1,14 +1,14 @@
 package Hitbug;
 
-public abstract class Hit {
-    public abstract void ejecutar();
-    public abstract void deshacer();
-    public abstract Bag getContenedor();
-    public void verificaPermisos(Usuario usuario){
-        if(getContenedor().puedeEditar(usuario))
-            throw new UsuarioException("No tiene los permisos para editar el contenido");
+import java.util.LinkedList;
+
+public class Hit {
+    LinkedList<Modificacion> modificaciones;
+    public Hit(){
+        modificaciones= new LinkedList<>();
     }
-    public void agregarAHistorial(){
-        getContenedor().agregarHit(this);
+    void agregarModificacion(Modificacion modificacion){
+        modificaciones.add(modificacion);
     }
+
 }

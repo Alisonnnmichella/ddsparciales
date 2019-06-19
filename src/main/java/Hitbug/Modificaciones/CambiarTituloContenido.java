@@ -1,6 +1,6 @@
 package Hitbug;
 
-public class CambiarTituloContenido extends Hit{
+public class CambiarTituloContenido extends Modificacion {
     private Contenido contenido;
     private String titulo;
     private String tituloOriginal;

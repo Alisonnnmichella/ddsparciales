@@ -1,9 +1,9 @@
 package Hitbug;
 
 public class HitRequest {
-    private Hit hit;
+    private Modificacion hit;
     private EstadoHitRequest estado;
-    public HitRequest(Hit hit){
+    public HitRequest(Modificacion hit){
         this.hit=hit;
         this.estado=EstadoHitRequest.PENDIENTE;
     }
