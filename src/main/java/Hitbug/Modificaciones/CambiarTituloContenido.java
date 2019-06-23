@@ -1,25 +1,29 @@
-package Hitbug;
+package Hitbug.Modificaciones;
+import Hitbug.*;
+import Hitbug.Excepciones.HitRequestException;
 
-public class CambiarTituloContenido extends Modificacion {
+public class CambiarTituloContenido implements Modificacion {
     private Contenido contenido;
+    private CambiarTituloContenido deshacer;
     private String titulo;
-    private String tituloOriginal;
-
+    private Bag bag;
     public CambiarTituloContenido(Contenido contenido,String titulo){
         this.contenido=contenido;
         this.titulo=titulo;
-        this.tituloOriginal=contenido.getTitulo();
+        deshacer= new CambiarTituloContenido(contenido,contenido.getTitulo());
     }
-    public void ejecutar(){
+    public void modificarBag(Bag bag){
+        elContenidoPerteneceALBag(bag);
+        this.bag=bag;
         contenido.modificarTitulo(titulo);
-        agregarAHistorial();
+
     }
     public void deshacer(){
-        CambiarTituloContenido deshacer= new CambiarTituloContenido(contenido,tituloOriginal);
-        deshacer.ejecutar();
+        deshacer.modificarBag(bag);
     }
-    public Bag getContenedor(){
-        return contenido.getContenedor();
+    private void elContenidoPerteneceALBag(Bag bag){
+        if(!bag.tieneContenido(contenido))
+            throw new HitRequestException("El contenido que desea modificar no pertenece al bag");
     }
 
 }
