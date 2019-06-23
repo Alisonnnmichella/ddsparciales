@@ -32,7 +32,7 @@ public class Bag{
     public void agregarCambio(Hit hit){
         historial.add(hit);
     }
-
+    public void quitarCambio(Hit hit){historial.remove(hit);}
     public void agregarBagReferenciado(Bag bag){
         bagsReferenciados.add(bag);
     }

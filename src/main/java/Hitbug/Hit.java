@@ -17,10 +17,11 @@ public class Hit {
         modificaciones.forEach(modificacion -> modificacion.modificarBag(bag));
         bag.agregarCambio(this);
     }
-    public void deshacer(){
+    public void deshacer(Usuario usuario){
+        verificoPermisosDeUsuario(usuario);
         verifacionEjecucionAnteriorDelHit();
         modificaciones.forEach(modificacion -> modificacion.deshacer());
-        bag.agregarCambio(this);
+        bag.quitarCambio(this);
     }
     private void verifacionEjecucionAnteriorDelHit(){
         if(!bag.perteneceElHit(this))
