@@ -15,10 +15,12 @@ public class Hit {
     public void ejecutar(Usuario usuario)
     {   verificoPermisosDeUsuario(usuario);
         modificaciones.forEach(modificacion -> modificacion.modificarBag(bag));
+        bag.agregarCambio(this);
     }
     public void deshacer(){
         verifacionEjecucionAnteriorDelHit();
         modificaciones.forEach(modificacion -> modificacion.deshacer());
+        bag.agregarCambio(this);
     }
     private void verifacionEjecucionAnteriorDelHit(){
         if(!bag.perteneceElHit(this))

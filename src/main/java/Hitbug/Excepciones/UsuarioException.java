@@ -1,4 +1,4 @@
-package Hitbug;
+package Hitbug.Excepciones;
 
 public class UsuarioException extends RuntimeException{
     public UsuarioException(String message) {

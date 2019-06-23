@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/BagException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/BagException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/UsuarioException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/UsuarioException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/Hit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/Hit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/HitRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/HitRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/AgregarContenido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/AgregarContenido.java" afterDir="false" />
@@ -28,7 +29,74 @@
     <favorites_list name="Parciales" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Bag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Usuario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitRequestException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/UsuarioException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/AgregarContenido.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Hit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/CambiarDescripcion.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/HitRequestException.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/BagException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Hitbug/Hit.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/Modificacion.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/BagException.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitRequestException.java" />
@@ -67,6 +134,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/Bag.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/HitRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hitbug/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/UsuarioException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Hitbug/Hit.java" />
       </list>
     </option>
   </component>
@@ -148,7 +217,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561323593161" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561323594025" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Parcial" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -247,6 +316,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1292" height="686" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48595506" visible="true" weight="0.26704547" />
       <window_info id="Structure" order="1" sideWeight="0.51404494" side_tool="true" weight="0.26217532" />
@@ -311,20 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitRequestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/UsuarioException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/BagException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -342,49 +398,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/Modificacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/AgregarContenido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/CambiarDescripcion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Hit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -410,15 +427,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/AgregarContenido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/UsuarioException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Excepciones/HitRequestException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Modificaciones/Modificacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Bag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1975#1976#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hitbug/Hit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
