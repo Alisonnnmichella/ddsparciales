@@ -1,30 +1,35 @@
 package Hitbug;
 
+import Hitbug.Excepciones.BagException;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
-public class Bag implements Cloneable{
+public class Bag{
     private Set<Bag> bagsReferenciados;
     private Set<Contenido> contenidos;
-    private LinkedList <Modificacion> historial;
+    private LinkedList <Hit> historial;
     private Usuario duenio;
     private Set<Usuario> colaboradores;
-    public Bag(){
+    public Bag(Usuario duenio){
+        this.duenio=duenio;
         bagsReferenciados=new HashSet<>();
         contenidos= new HashSet<>();
         historial= new LinkedList<>();
     }
 
-    public void agregarColaborador(Usuario usuario){
+    public void agregarColaborador(Usuario usuario,Usuario duenio){
+        verificoPermisosDeDuenio(duenio);
         colaboradores.add(usuario);
     }
 
-    public void quitarColaborador(Usuario usuario){
+    public void quitarColaborador(Usuario usuario,Usuario duenio){
+        verificoPermisosDeDuenio(duenio);
         colaboradores.remove(usuario);
     }
 
-    public void agregarCambio(Modificacion hit){
+    public void agregarCambio(Hit hit){
         historial.add(hit);
     }
 
@@ -44,6 +49,9 @@ public class Bag implements Cloneable{
         contenidos.remove(contenido);
     }
 
+    public boolean tieneContenido(Contenido contenido){
+        return contenidos.stream().anyMatch(contenidoPropio->contenidoPropio==contenido);
+    }
     public boolean puedeEditar(Usuario usuario){
         if(duenio==usuario)
             return true;
@@ -55,6 +63,13 @@ public class Bag implements Cloneable{
                     "realizados actualmente");
 
 
+    }
+    public boolean perteneceElHit(Hit hit){
+        return historial.stream().anyMatch(hitspropios->hitspropios==hit);
+    }
+    public void verificoPermisosDeDuenio(Usuario usuario){
+        if(usuario!=duenio)
+            throw new BagException("No posee los permisos suficientes");
     }
 
 }

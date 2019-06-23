@@ -1,6 +1,7 @@
-package Hitbug;
+package Hitbug.Modificaciones;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
+import Hitbug.Bag;
+import Hitbug.*;
 
 public class QuitarContenido implements Modificacion {
     Bag bag;
@@ -16,7 +17,7 @@ public class QuitarContenido implements Modificacion {
         bag.quitarContenido(contenido);
         this.bag=bag;
     }
-    public void deshacerBag(){
+    public void deshacer(){
        deshacer.modificarBag(bag);
     }
 

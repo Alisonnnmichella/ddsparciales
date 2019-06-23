@@ -1,19 +1,19 @@
-package Hitbug;
+package Hitbug.Modificaciones;
 
-public class AgregarContenido extends Modificacion {
+import Hitbug.*;
+
+public class AgregarContenido implements Modificacion {
     Bag bag;
     Contenido contenido;
-    public AgregarContenido(Bag bag,Contenido contenido){
-        this.bag= bag;
+    public AgregarContenido(Contenido contenido){
         this.contenido=contenido;
     }
-    public void ejecutar() {
+    public void modificarBag(Bag bag) {
         bag.agregarContenido(contenido);
-        agregarAHistorial();
-    }
+        }
     public void deshacer(){
-        QuitarContenido deshacer=new QuitarContenido(bag,contenido);
-        deshacer.ejecutar();
+        QuitarContenido deshacer=new QuitarContenido(contenido);
+        deshacer.modificarBag(bag);
     }
     public Bag getContenedor(){
         return bag;

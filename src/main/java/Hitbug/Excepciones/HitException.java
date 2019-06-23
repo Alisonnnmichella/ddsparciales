@@ -1,4 +1,7 @@
-package Hitbug;
+package Hitbug.Excepciones;
 
-public class HitException {
+public class HitException extends RuntimeException {
+    public HitException(String message) {
+        super(message);
+    }
 }

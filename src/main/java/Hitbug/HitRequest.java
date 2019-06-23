@@ -1,15 +1,18 @@
 package Hitbug;
 
+import Hitbug.Excepciones.HitRequestException;
+import Hitbug.Modificaciones.Modificacion;
+
 public class HitRequest {
-    private Modificacion hit;
+    private Hit hit;
     private EstadoHitRequest estado;
-    public HitRequest(Modificacion hit){
+    public HitRequest(Hit hit){
         this.hit=hit;
         this.estado=EstadoHitRequest.PENDIENTE;
     }
-    public void aprobar(){
+    public void aprobar(Usuario usuario){
         verificoCambioDeEstado(EstadoHitRequest.APROBADO);
-        hit.ejecutar();
+        hit.ejecutar(usuario);
         estado=EstadoHitRequest.APROBADO;
     }
     public void rechazar(){

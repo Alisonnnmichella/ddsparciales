@@ -26,7 +26,7 @@ public class CambiarDescripcion implements Modificacion {
     }
 
     private void elContenidoPerteneceALBag(Bag bag){
-     if(!bag.getContenidos().stream().anyMatch(conten->conten==contenido))
+     if(!bag.tieneContenido(contenido))
          throw new HitRequestException("El contenido que desea modificar no pertenece al bag");
     }
 

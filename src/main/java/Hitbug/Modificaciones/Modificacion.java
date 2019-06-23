@@ -1,15 +1,9 @@
-package Hitbug;
+package Hitbug.Modificaciones;
 
-public abstract class Modificacion {
-    public abstract void ejecutar();
-    public abstract void deshacer();
-    public abstract Bag getContenedor();
-    
-    public void verificaPermisos(Usuario usuario){
-        if(getContenedor().puedeEditar(usuario))
-            throw new UsuarioException("No tiene los permisos para editar el contenido");
+import Hitbug.Bag;
+
+public interface Modificacion {
+        void modificarBag(Bag bag);
+        void deshacer();
+        //boolean sePuedeEjecutar();
     }
-    public void agregarAHistorial(){
-        getContenedor().agregarCambio(this);
-    }
-}
